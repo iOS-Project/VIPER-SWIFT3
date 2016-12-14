@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C63a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="352" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="VIPER_SWIFT3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KMy-x1-MV8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="210" id="v14-Ux-n2M"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grl-5Z-8TF">
+                        <rect key="frame" x="8" y="280" width="304" height="64"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="PS7-pT-tFc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WVx-JV-a4g">
+                        <rect key="frame" x="8" y="215" width="304" height="57"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="57" id="bk6-Ny-pAR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="grl-5Z-8TF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0lg-xO-q4s"/>
+                    <constraint firstItem="WVx-JV-a4g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="1qv-ve-w2D"/>
+                    <constraint firstItem="grl-5Z-8TF" firstAttribute="top" secondItem="WVx-JV-a4g" secondAttribute="bottom" constant="8" id="2ji-HX-NwW"/>
+                    <constraint firstAttribute="trailing" secondItem="KMy-x1-MV8" secondAttribute="trailing" id="5KE-0O-qJY"/>
+                    <constraint firstItem="KMy-x1-MV8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HeJ-jR-AYV"/>
+                    <constraint firstItem="KMy-x1-MV8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IAG-yd-vRc"/>
+                    <constraint firstItem="WVx-JV-a4g" firstAttribute="top" secondItem="KMy-x1-MV8" secondAttribute="bottom" constant="5" id="K6S-Qr-N76"/>
+                    <constraint firstAttribute="trailing" secondItem="grl-5Z-8TF" secondAttribute="trailing" constant="8" id="Uy9-z8-b21"/>
+                    <constraint firstItem="WVx-JV-a4g" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="tDQ-Ly-R4Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artDescriptionLabel" destination="grl-5Z-8TF" id="Rft-vO-aD8"/>
+                <outlet property="artImage" destination="KMy-x1-MV8" id="C4u-ub-uu9"/>
+                <outlet property="artTitleLabel" destination="WVx-JV-a4g" id="fHh-x9-9sw"/>
+            </connections>
+            <point key="canvasLocation" x="-41" y="61"/>
+        </tableViewCell>
+    </objects>
+</document>
