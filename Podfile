@@ -9,4 +9,5 @@ target 'VIPER-SWIFT3' do
   pod 'Alamofire'
   pod 'AlamofireObjectMapper'
   pod 'Kingfisher'
+  pod 'NVActivityIndicatorView'
 end

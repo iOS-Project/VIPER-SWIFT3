@@ -38,6 +38,7 @@ class ListWireframe: NSObject{
     
     func presentAddInterface(){
         // Show Add Interface here
+        addWireframe!.presentAddInterfaceFromViewController(listTableViewController!)
     }
     
     private func listTableViewFromStoryboard() -> ListTableViewController{

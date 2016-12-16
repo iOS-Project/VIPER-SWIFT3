@@ -30,7 +30,7 @@ extension ListPresenter : ListModuleProtocol{
     }
     
     func addNewArticle() {
-        
+        listWireframe?.presentAddInterface()
     }
     
     func loadAllArticle() {

@@ -24,9 +24,17 @@ class ListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureView()
         tableView.register(UINib(nibName: "ArticleTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: listTableViewReusableCell)
         
+    }
+    
+    private func configureView(){
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(openAddInterface))
+    }
+    
+    func openAddInterface(){
+        eventHandler?.addNewArticle()
     }
     
     // MARK : TableView Section

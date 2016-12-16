@@ -27,6 +27,10 @@ class AppDependency{
         let listPresenter = ListPresenter()
         let listInteractor = ListInterator()
         
+        let addWireframe = AddWireframe()
+        let addPresenter = AddPresenter()
+        let addInteractor = AddInteractor()
+        
         listPresenter.listInteractor = listInteractor
         listPresenter.listViewProtocol = listWireFrame.listTableViewController
         listPresenter.listWireframe = listWireFrame
@@ -35,6 +39,15 @@ class AppDependency{
         
         listWireFrame.listPresenter = listPresenter
         listWireFrame.rootWireframe = rootWireframe
+        listWireFrame.addWireframe = addWireframe
+        
+        addPresenter.addInteractorInput = addInteractor
+        addPresenter.addWireframe = addWireframe
+        
+        addWireframe.addPresenter = addPresenter
+        
+        addInteractor.out = addPresenter
+        
     }
 }
 

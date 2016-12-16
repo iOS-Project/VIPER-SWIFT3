@@ -14,6 +14,12 @@
 		D530597B1E00D70E00E616D4 /* ListInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530597A1E00D70E00E616D4 /* ListInterator.swift */; };
 		D530597E1E00E69C00E616D4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530597D1E00E69C00E616D4 /* API.swift */; };
 		D53059801E00E81800E616D4 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530597F1E00E81800E616D4 /* AppDependencies.swift */; };
+		D53059821E02266300E616D4 /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53059811E02266300E616D4 /* AddTableViewController.swift */; };
+		D53059841E0226C800E616D4 /* AddModuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53059831E0226C800E616D4 /* AddModuleProtocol.swift */; };
+		D53059861E02277900E616D4 /* AddModuleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53059851E02277900E616D4 /* AddModuleDelegate.swift */; };
+		D53059881E0228C200E616D4 /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53059871E0228C200E616D4 /* AddPresenter.swift */; };
+		D530598A1E02294200E616D4 /* AddInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53059891E02294200E616D4 /* AddInteractor.swift */; };
+		D530598C1E02298600E616D4 /* AddInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D530598B1E02298600E616D4 /* AddInteractorIO.swift */; };
 		D58015481DFE3BC200A7068D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58015471DFE3BC200A7068D /* AppDelegate.swift */; };
 		D580154D1DFE3BC200A7068D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D580154B1DFE3BC200A7068D /* Main.storyboard */; };
 		D580154F1DFE3BC200A7068D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D580154E1DFE3BC200A7068D /* Assets.xcassets */; };
@@ -40,6 +46,12 @@
 		D530597A1E00D70E00E616D4 /* ListInterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListInterator.swift; path = "Modules/List Article/Application Logic/Interactor/ListInterator.swift"; sourceTree = "<group>"; };
 		D530597D1E00E69C00E616D4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Common/Utilities/API.swift; sourceTree = "<group>"; };
 		D530597F1E00E81800E616D4 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		D53059811E02266300E616D4 /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddTableViewController.swift; path = "Modules/Add Article/User Interface/View/AddTableViewController.swift"; sourceTree = "<group>"; };
+		D53059831E0226C800E616D4 /* AddModuleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddModuleProtocol.swift; sourceTree = "<group>"; };
+		D53059851E02277900E616D4 /* AddModuleDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddModuleDelegate.swift; path = "Modules/Add Article/User Interface/View/AddModuleDelegate.swift"; sourceTree = "<group>"; };
+		D53059871E0228C200E616D4 /* AddPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPresenter.swift; path = "Modules/Add Article/User Interface/Presenter/AddPresenter.swift"; sourceTree = "<group>"; };
+		D53059891E02294200E616D4 /* AddInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInteractor.swift; path = "Modules/Add Article/Application Logic/Interactor/AddInteractor.swift"; sourceTree = "<group>"; };
+		D530598B1E02298600E616D4 /* AddInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddInteractorIO.swift; path = "Modules/Add Article/Application Logic/Interactor/AddInteractorIO.swift"; sourceTree = "<group>"; };
 		D58015441DFE3BC200A7068D /* VIPER-SWIFT3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-SWIFT3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58015471DFE3BC200A7068D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D580154C1DFE3BC200A7068D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +121,7 @@
 		D518FD531E0033DA00389E0F /* Module Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				D53059831E0226C800E616D4 /* AddModuleProtocol.swift */,
 			);
 			name = "Module Protocol";
 			sourceTree = "<group>";
@@ -116,6 +129,7 @@
 		D518FD541E0033EB00389E0F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				D53059871E0228C200E616D4 /* AddPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -123,6 +137,8 @@
 		D518FD551E00340300389E0F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D53059811E02266300E616D4 /* AddTableViewController.swift */,
+				D53059851E02277900E616D4 /* AddModuleDelegate.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -138,6 +154,8 @@
 		D518FD571E00342F00389E0F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				D53059891E02294200E616D4 /* AddInteractor.swift */,
+				D530598B1E02298600E616D4 /* AddInteractorIO.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -460,17 +478,23 @@
 			files = (
 				D5F1ED8D1DFFF907009DCEE6 /* ArticleTableViewCell.swift in Sources */,
 				D530597B1E00D70E00E616D4 /* ListInterator.swift in Sources */,
+				D530598A1E02294200E616D4 /* AddInteractor.swift in Sources */,
 				D518FD5D1E004B3D00389E0F /* ListInteractorOutput.swift in Sources */,
 				D5F1ED951DFFFE76009DCEE6 /* ListPresenter.swift in Sources */,
 				D530597E1E00E69C00E616D4 /* API.swift in Sources */,
+				D53059861E02277900E616D4 /* AddModuleDelegate.swift in Sources */,
 				D518FD591E00350900389E0F /* AddWireframe.swift in Sources */,
 				D518FD5B1E004B0200389E0F /* ListInteractorInput.swift in Sources */,
+				D53059841E0226C800E616D4 /* AddModuleProtocol.swift in Sources */,
 				D5F1ED911DFFFC01009DCEE6 /* ListViewProtocol.swift in Sources */,
 				D53059801E00E81800E616D4 /* AppDependencies.swift in Sources */,
 				D5F1ED9A1DFFFFDE009DCEE6 /* ListModuleProtocol.swift in Sources */,
 				D5F1ED891DFFF8C6009DCEE6 /* ListWireframe.swift in Sources */,
 				D5F1ED851DFFF713009DCEE6 /* RootWireframe.swift in Sources */,
+				D53059881E0228C200E616D4 /* AddPresenter.swift in Sources */,
+				D53059821E02266300E616D4 /* AddTableViewController.swift in Sources */,
 				D5F1ED931DFFFDC3009DCEE6 /* ArticleList.swift in Sources */,
+				D530598C1E02298600E616D4 /* AddInteractorIO.swift in Sources */,
 				D5F1ED8F1DFFF907009DCEE6 /* ListTableViewController.swift in Sources */,
 				D5F1ED871DFFF7D7009DCEE6 /* Model.swift in Sources */,
 				D58015481DFE3BC200A7068D /* AppDelegate.swift in Sources */,
@@ -517,6 +541,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -567,6 +592,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -596,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0620FDA352762BA6819616C2 /* Pods-VIPER-SWIFT3.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S3L3V3L25C;
 				INFOPLIST_FILE = "VIPER-SWIFT3/Info.plist";
@@ -610,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1F2F43D469E3E41F1D4D928 /* Pods-VIPER-SWIFT3.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S3L3V3L25C;
 				INFOPLIST_FILE = "VIPER-SWIFT3/Info.plist";

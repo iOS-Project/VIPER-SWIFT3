@@ -14,10 +14,12 @@ let COMMON_HEADERS : HTTPHeaders = [
 ]
 
 let BASE_URL = "http://120.136.24.174:1301"
-let FIND_ALL_ARTICLES_URL = BASE_URL + "/v1/api/articles"
-let DELETE_ARTICLE_BY_ID = FIND_ALL_ARTICLES_URL
+let ARTICLE_URL = BASE_URL + "/v1/api/articles"
+
+// Upload
+let UPLOAD_SINGLE_IMAGE = BASE_URL + "/v1/api/uploadfile/single"
 
 // Response Key
-let RESPONSE_KEY = (code : "CODE", message :"MESSAGE")
+let RESPONSE_KEY = (data : "DATA", code : "CODE", message :"MESSAGE")
 // Response Code
 let RESPONSE_CODE = (success : "0000", fail: "9999")
