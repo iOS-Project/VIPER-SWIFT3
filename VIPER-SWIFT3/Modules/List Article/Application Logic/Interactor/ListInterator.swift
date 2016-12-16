@@ -15,9 +15,16 @@ class ListInterator : ListInteractorInput{
     // ListInteractorOutput
     var listInteractorOutput:ListInteractorOutput?
     
-    func findAllArticle() {
-        Alamofire.request(URL(string: ARTICLE_URL)!, method: HTTPMethod.get, parameters: nil, encoding: JSONEncoding.default, headers: COMMON_HEADERS).responseObject(completionHandler: { (response:DataResponse<ArticleArray>) in
-            print(response.result.value!)
+    func findArticle(title: String, page: Int, limit: Int) {
+        
+        let param : Parameters = [
+            "title" : title,
+            "page"  : page,
+            "limit" : limit
+        ]
+        
+        Alamofire.request(URL(string: ARTICLE_URL)!, method: HTTPMethod.get, parameters: param, encoding: URLEncoding.default, headers: COMMON_HEADERS).responseObject(completionHandler: { (response:DataResponse<ArticleArray>) in
+            //debugPrint(response.result.value!)
             // Call Back with data
             self.listInteractorOutput?.responseData(response.result.value!)
             
@@ -31,7 +38,7 @@ class ListInterator : ListInteractorInput{
             if let result = response.result.value as? [String: AnyObject]{
                 
                 if (result[RESPONSE_KEY.code] as! String) == RESPONSE_CODE.success{
-                    print(result[RESPONSE_KEY.code] as! String)
+                    //print(result[RESPONSE_KEY.code] as! String)
                     self.listInteractorOutput?.operationCompletion(true)
                 }else{
                     self.listInteractorOutput?.operationCompletion(false)

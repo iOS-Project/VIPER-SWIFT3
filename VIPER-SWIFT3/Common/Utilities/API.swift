@@ -23,3 +23,6 @@ let UPLOAD_SINGLE_IMAGE = BASE_URL + "/v1/api/uploadfile/single"
 let RESPONSE_KEY = (data : "DATA", code : "CODE", message :"MESSAGE")
 // Response Code
 let RESPONSE_CODE = (success : "0000", fail: "9999")
+
+// Default Pagination
+var PAGINATION = Pagination(JSON: ["PAGE" : 1, "LIMIT": 5, "TOTAL_COUNT": 0, "TOTAL_PAGES": 1])

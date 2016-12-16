@@ -13,14 +13,8 @@ protocol ListModuleProtocol {
     func addNewArticle()
     
     // Load Article
-    func loadAllArticle()
-    
-    // Load Artice By Id
-    func loadArticleById(_ id: Int)
+    func loadArticle(title: String, page: Int, limit: Int)
     
     // Delete article
     func deleteArticleById(_ id: Int)
-    
-    // Update View
-    func updateView()
 }

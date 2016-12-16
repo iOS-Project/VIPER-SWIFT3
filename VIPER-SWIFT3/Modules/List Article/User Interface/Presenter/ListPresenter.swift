@@ -25,20 +25,12 @@ class ListPresenter{
 
 extension ListPresenter : ListModuleProtocol{
     
-    func updateView() {
-        loadAllArticle()
-    }
-    
     func addNewArticle() {
         listWireframe?.presentAddInterface()
     }
     
-    func loadAllArticle() {
-        listInteractor?.findAllArticle()
-    }
-    
-    func loadArticleById(_ id: Int) {
-        
+    func loadArticle(title: String, page: Int, limit: Int) {
+        listInteractor?.findArticle(title: title, page: page, limit: limit)
     }
     
     func deleteArticleById(_ id: Int) {

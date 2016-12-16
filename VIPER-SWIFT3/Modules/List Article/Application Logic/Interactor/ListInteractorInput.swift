@@ -9,6 +9,6 @@
 import Foundation
 
 protocol ListInteractorInput{
-    func findAllArticle()
+    func findArticle(title: String, page: Int, limit: Int)
     func deleteArticle(_ id: Int)
 }
